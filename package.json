@@ -5,7 +5,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "start": "npm run dev",
+    "start": "pnpm run dev",
     "dev": "dumi dev",
     "build": "father build",
     "build:watch": "father dev",
@@ -13,10 +13,10 @@
     "docs:preview": "dumi preview",
     "prepare": "husky install && dumi setup",
     "doctor": "father doctor",
-    "lint": "npm run lint:es && npm run lint:css",
+    "lint": "pnpm run lint:es && pnpm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepublishOnly": "father doctor && npm run build"
+    "prepublishOnly": "father doctor && pnpm run build"
   },
   "authors": [
     "cssheo"
@@ -72,5 +72,8 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "stylelint": "^14.9.1"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.26.0"
   }
 }
