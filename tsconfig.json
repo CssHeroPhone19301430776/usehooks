@@ -8,8 +8,8 @@
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
-      "usehooks": ["src"],
-      "usehooks/*": ["src/*", "*"]
+      "@csshero/usehooks": ["src"],
+      "@csshero/usehooks/*": ["src/*", "*"]
     }
   },
   "include": [".dumirc.ts", "src/**/*"]

@@ -3,8 +3,8 @@
  * description: 当不接收任何参数时，默认为 boolean 切换，其中默认值为 false。
  */
 
+import { useToggle } from '@csshero/usehooks';
 import React, { FC } from 'react';
-import { useToggle } from 'usehooks';
 const DemoOne: FC = () => {
   const [value, action] = useToggle(false);
 

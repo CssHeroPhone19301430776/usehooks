@@ -3,8 +3,8 @@
  * description: 接受两个可选参数，在它们之间进行切换。
  */
 
+import { useToggle } from '@csshero/usehooks';
 import React, { FC } from 'react';
-import { useToggle } from 'usehooks';
 
 const DemoThree: FC = () => {
   const [value, action] = useToggle('Hello', 'World');

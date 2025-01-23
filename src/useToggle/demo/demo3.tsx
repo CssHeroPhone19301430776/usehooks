@@ -3,8 +3,8 @@
  * description: 接受一个可选参数，取反时设置为!defaultValue。
  */
 
+import { useToggle } from '@csshero/usehooks';
 import React, { FC } from 'react';
-import { useToggle } from 'usehooks';
 
 const DemoTwo: FC = () => {
   const [value, action] = useToggle('true');

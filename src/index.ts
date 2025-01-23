@@ -1,3 +1,4 @@
+import useBoolean from './useBoolean';
 import useToggle from './useToggle';
 
-export { useToggle };
+export { useBoolean, useToggle };
