@@ -6,7 +6,7 @@ hero:
     - text: 指南
       link: /guide
     - text: Hooks
-      link: /components/use-toggle
+      link: /components
   showCustomContent: true
 ---
 

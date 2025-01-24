@@ -1,10 +1,10 @@
-import { useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef } from 'react';
 
 type FnType = () => void;
 
 const useTimeout = (callback: FnType, delay: number = 1000): FnType => {
-  const timer = useRef<NodeJS.Timeout>();
-  const clearFn = () => clearTimeout(timer.current);
+  const timer = useRef<ReturnType<typeof setInterval>>();
+  const clearFn = useCallback(() => clearTimeout(timer.current), []);
 
   useEffect(() => {
     timer.current = setTimeout(callback, delay);
