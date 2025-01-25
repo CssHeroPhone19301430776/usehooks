@@ -7,6 +7,7 @@ const useInterval = (
   immediate: boolean = false,
 ): FnType => {
   const timerRef = useRef<ReturnType<typeof setInterval>>();
+  const callbackRef = useRef<FnType>(callback); // 用于保存最新的 callback
 
   const clearFn = useCallback(() => {
     if (timerRef.current) {
@@ -14,11 +15,18 @@ const useInterval = (
     }
   }, []);
 
+  // 每次渲染时更新 callbackRef 的值
+  useEffect(() => {
+    callbackRef.current = callback;
+  }, [callback]);
+
   useEffect(() => {
     if (immediate) {
-      callback();
+      callbackRef.current();
     }
-    timerRef.current = setInterval(callback, delay);
+    timerRef.current = setInterval(() => {
+      callbackRef.current(); // 每次都读取最新的 callback
+    }, delay);
     return clearFn;
   }, [delay]);
 

@@ -15,6 +15,8 @@ group:
 
 ### 进阶使用
 
+<code src='./demo/demo2.tsx'></code>
+
 ## API
 
 ```typescript
