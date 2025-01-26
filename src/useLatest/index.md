@@ -1,0 +1,20 @@
+---
+group:
+  title: 高级
+---
+
+# useLatest
+
+返回当前最新值的 Hook，可以避免闭包陷阱问题。
+
+## 代码演示
+
+### 基础用法
+
+<code src="./demo/demo1.tsx"></code>
+
+## API
+
+```typescript
+const latestValueRef = useLatest<T>(value: T): React.MutableRefObject<T>;
+```
