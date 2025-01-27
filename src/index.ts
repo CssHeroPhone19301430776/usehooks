@@ -6,6 +6,7 @@ import useLatest from './useLatest';
 import useMemoizedFn from './useMemoizedFn';
 import useMount from './useMount';
 import useThrottleFn from './useThrottleFn';
+import useThrottleValue from './useThrottleValue';
 import useTimeout from './useTimeout';
 import useToggle from './useToggle';
 import useUnmount from './useUnmount';
@@ -18,6 +19,7 @@ export {
   useMemoizedFn,
   useMount,
   useThrottleFn,
+  useThrottleValue,
   useTimeout,
   useToggle,
   useUnmount,
