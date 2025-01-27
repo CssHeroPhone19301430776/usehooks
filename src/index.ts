@@ -1,6 +1,7 @@
 import useBoolean from './useBoolean';
 import useCreation from './useCreation';
 import useDebounceFn from './useDebounceFn';
+import useDebounceValue from './useDebounceValue';
 import useInterval from './useInterval';
 import useLatest from './useLatest';
 import useMemoizedFn from './useMemoizedFn';
@@ -14,6 +15,7 @@ export {
   useBoolean,
   useCreation,
   useDebounceFn,
+  useDebounceValue,
   useInterval,
   useLatest,
   useMemoizedFn,

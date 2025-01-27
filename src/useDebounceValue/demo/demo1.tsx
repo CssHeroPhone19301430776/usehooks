@@ -1,24 +1,24 @@
 /**
  * title: 案例
- * description: ThrottledValue 每隔 1000ms 变化一次。
+ * description: debounceValue 每隔 1000ms 变化一次。
  */
 
-import { useThrottleValue } from '@csshero/usehooks';
+import { useDebounceValue } from '@csshero/usehooks';
 import React, { useState } from 'react';
 
 export default () => {
   const [value, setValue] = useState<string>('');
-  const throttledValue = useThrottleValue(value, { wait: 1000 });
+  const debounceValue = useDebounceValue(value, { wait: 1000 });
 
   return (
     <div>
       <input
         value={value}
         onChange={(e) => setValue(e.target.value)}
-        placeholder="修改throttledValue"
+        placeholder="修改debounceValue"
         style={{ width: 280 }}
       />
-      <p style={{ marginTop: 16 }}>throttledValue: {throttledValue}</p>
+      <p style={{ marginTop: 16 }}>debounceValue: {debounceValue}</p>
     </div>
   );
 };
