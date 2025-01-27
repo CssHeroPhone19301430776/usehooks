@@ -5,6 +5,7 @@ import useLatest from './useLatest';
 import useMemoizedFn from './useMemoizedFn';
 import useTimeout from './useTimeout';
 import useToggle from './useToggle';
+import useUnmount from './useUnmount';
 
 export {
   useBoolean,
@@ -14,4 +15,5 @@ export {
   useMemoizedFn,
   useTimeout,
   useToggle,
+  useUnmount,
 };
