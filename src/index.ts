@@ -11,6 +11,7 @@ import useThrottleValue from './useThrottleValue';
 import useTimeout from './useTimeout';
 import useToggle from './useToggle';
 import useUnmount from './useUnmount';
+import useUpdate from './useUpdate';
 export {
   useBoolean,
   useCreation,
@@ -25,4 +26,5 @@ export {
   useTimeout,
   useToggle,
   useUnmount,
+  useUpdate,
 };
