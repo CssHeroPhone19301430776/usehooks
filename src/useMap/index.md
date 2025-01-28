@@ -10,7 +10,7 @@ group: State
 
 <code src="./demo/demo1.tsx"></code>
 
-:::info{title=如何正确参数传递类型}
+:::info{title=如何正确传递参数类型}
 在给 useMap 传递参数时 因为参数的类型是个可以迭代的集合，其中每个元素都是一个包含键和值的二元元组。但是在默认情况下，TypeScript 会把写的元组推断为数组类型
 
 ```ts

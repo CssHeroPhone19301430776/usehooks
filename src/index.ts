@@ -7,6 +7,7 @@ import useLatest from './useLatest';
 import useMap from './useMap';
 import useMemoizedFn from './useMemoizedFn';
 import useMount from './useMount';
+import useSet from './useSet';
 import useThrottleFn from './useThrottleFn';
 import useThrottleValue from './useThrottleValue';
 import useTimeout from './useTimeout';
@@ -23,6 +24,7 @@ export {
   useMap,
   useMemoizedFn,
   useMount,
+  useSet,
   useThrottleFn,
   useThrottleValue,
   useTimeout,

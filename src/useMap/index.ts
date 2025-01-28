@@ -1,4 +1,5 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
+import useCreation from '../useCreation';
 
 interface Actions<K, V> {
   set: (key: K, value: V) => void;
@@ -14,7 +15,7 @@ const useMap = <K, V>(
   const initMap = () => new Map(initValue);
   const [map, setMap] = useState<Map<K, V>>(initMap);
 
-  const actions = useMemo(() => {
+  const actions = useCreation(() => {
     const set = (key: K, value: V) => {
       setMap((prev) => {
         const temp = new Map(prev);
