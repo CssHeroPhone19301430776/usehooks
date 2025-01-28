@@ -22,15 +22,15 @@ hero:
 :::code-group
 
 ```bash [npm]
-npm install -D dumi
+npm install @csshero/usehooks
 ```
 
 ```bash [yarn]
-yarn add -D dumi
+yarn add @csshero/usehooks
 ```
 
 ```bash [pnpm]
-pnpm add -D dumi
+pnpm add @csshero/usehooks
 ```
 
 :::
@@ -38,5 +38,5 @@ pnpm add -D dumi
 ## 🔨 使用
 
 ```ts
-import { useToggle } from 'usehooks';
+import { useToggle } from '@csshero/usehooks';
 ```
