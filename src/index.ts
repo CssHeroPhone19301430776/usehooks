@@ -4,6 +4,7 @@ import useDebounceFn from './useDebounceFn';
 import useDebounceValue from './useDebounceValue';
 import useInterval from './useInterval';
 import useLatest from './useLatest';
+import useMap from './useMap';
 import useMemoizedFn from './useMemoizedFn';
 import useMount from './useMount';
 import useThrottleFn from './useThrottleFn';
@@ -19,6 +20,7 @@ export {
   useDebounceValue,
   useInterval,
   useLatest,
+  useMap,
   useMemoizedFn,
   useMount,
   useThrottleFn,
