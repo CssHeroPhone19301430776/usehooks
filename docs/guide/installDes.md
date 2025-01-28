@@ -24,14 +24,6 @@ pnpm add @csshero/usehooks
 
 :::
 
-### CDN
-
-```html
-<script src="https://unpkg.com/@vueuse/shared"></script>
-
-<script src="https://unpkg.com/@vueuse/core"></script>
-```
-
 ## 使用示例
 
 只需从 `@csshero/usehooks`导入你需要的函数

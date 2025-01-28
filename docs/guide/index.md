@@ -10,7 +10,7 @@ useHooks，是一款为 React 开发场景而生的 Hooks 库。
 
 全新的 useHooks 主要具备以下特性：
 
-- 🚀 **易学易用**：直接通过 CDN 或者 npm 即可使用
+- 🚀 **易学易用**：直接通过 npm 下载即可使用
 - 🔍 **内置全文搜索**：标题、正文、demo 等内容均可被搜索，支持多关键词搜索
 - 🎨 **包含丰富的基础 Hooks**：如 useCreation、useLatest 等基础 hooks 为 react 开发赋能
 - 🚥 **可靠的代码健壮**：使用 Typescript 构建，提供完善的类型定义文件

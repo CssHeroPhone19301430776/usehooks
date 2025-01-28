@@ -1,7 +1,13 @@
 {
   "name": "@csshero/usehooks",
-  "version": "0.0.1",
+  "version": "0.1.3",
   "description": "a react hooks library",
+  "keywords": [
+    "react",
+    "hooks",
+    "@cssheo/usehooks",
+    "cssheo"
+  ],
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
