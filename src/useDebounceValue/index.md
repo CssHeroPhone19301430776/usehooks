@@ -4,7 +4,7 @@ group: State
 
 # useDebounceValue
 
-用来对 `值` 处理节流的 Hook。
+用来对 `值` 处理防抖的 Hook。
 
 ## 代码演示
 
