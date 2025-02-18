@@ -6,7 +6,7 @@ hero:
     - text: 指南
       link: /guide
     - text: Hooks
-      link: /components
+      link: /components/use-mount
   showCustomContent: true
 ---
 
